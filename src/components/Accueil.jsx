@@ -81,8 +81,7 @@ const Accueil = () => {
             text-slate-900 dark:text-white
             hover:bg-slate-900 hover:text-white 
             dark:hover:bg-white dark:hover:text-darkBg 
-            transition-all duration-300 font-medium mb-6 inline-block"
-          >
+            transition-all duration-300 font-medium mb-6 inline-block">
             Voir mon CV
           </a>
           
@@ -93,7 +92,7 @@ const Accueil = () => {
         <div className="w-full md:w-1/2 flex justify-center md:justify-end items-center">
           <div className="relative w-full max-w-[550px] aspect-[4/3] flex items-center justify-center">
             <img 
-              src="/pc.png" 
+              src="${import.meta.env.BASE_URL}pc.png" 
               alt="Illustration PC Portable" 
               className="absolute w-[90%] h-auto object-contain select-none pointer-events-none drop-shadow-[0_20px_50px_rgba(45,212,191,0.15)]"
             />
