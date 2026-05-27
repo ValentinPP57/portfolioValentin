@@ -92,7 +92,7 @@ const Accueil = () => {
         <div className="w-full md:w-1/2 flex justify-center md:justify-end items-center">
           <div className="relative w-full max-w-[550px] aspect-[4/3] flex items-center justify-center">
             <img 
-              src={"${import.meta.env.BASE_URL}pc.png"} 
+              src={`${import.meta.env.BASE_URL}pc.png`} 
               alt="Illustration PC Portable" 
               className="absolute w-[90%] h-auto object-contain select-none pointer-events-none drop-shadow-[0_20px_50px_rgba(45,212,191,0.15)]"
             />
