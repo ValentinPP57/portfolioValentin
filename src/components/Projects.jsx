@@ -25,11 +25,13 @@ const Projects = () => {
       title: "Wading Pool Python",
       date: "Octobre 2025",
       shortDesc: "'Piscine' Python de début d'année à Epitech",
-      longDesc: "",
+      longDesc: "Au début de ma première année à Epitech, j'ai était plongé dans une 'Piscine' python, une Piscine dans le milieu d'Epitech c'est un bootcamp, dans lequels on réalise des tâches tout les jours. Dans Cette piscine python, j'ai donc réaliser de nombre exercices pour m'initier à python.",
       tags: ["Epitech", "Python"],
       category: "Python",
       type: "epitech",
-      images: []
+      images: [
+        `${import.meta.env.BASE_URL}python.jpeg`
+      ]
     },
     {
       id: 2,
@@ -40,7 +42,9 @@ const Projects = () => {
       tags: ["Epitech", "Web", "HTML", "php"],
       category: "Web",
       type: "epitech",
-      images: []
+      images: [
+        `${import.meta.env.BASE_URL}skills/html.svg`
+      ]
     },
     {
       id: 3,
@@ -102,17 +106,21 @@ const Projects = () => {
         `${import.meta.env.BASE_URL}images/yowl/persona_Charlotte.png`,
       ]
     },
+
+    // Projets Pro
     {
       id: 7,
-      title: "",
+      title: "Stage à ACREOS",
       date: "",
-      shortDesc: "",
+      shortDesc: "Stage de 1 semaine dans l'entreprise ACREOS",
       longDesc: "",
-      tags: [""],
-      category: "",
+      tags: ["Pro", "Modélisation", "Unity"],
+      category: "Stage",
       type: "pro", 
       images: []
     },
+
+    // projets Perso
     {
       id: 8,
       title: "",
@@ -337,7 +345,7 @@ const Projects = () => {
             </div>
             <div className="text-slate-600 dark:text-neutral-300 space-y-4">
               <h4 className="font-bold text-slate-900 dark:text-white text-xl">À propos du projet :</h4>
-              <p className="text-lg leading-relaxed font-light">{ProjetSelectionne.longDesc || "Pas de description renseignée pour le moment."}</p>
+              <p className="text-lg leading-relaxed font-light">{ProjetSelectionne.longDesc || "Pas de description pour le moment."}</p>
             </div>
           </div>
         </div>
