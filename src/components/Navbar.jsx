@@ -38,9 +38,9 @@ const Navbar = () => {
         <div className="flex justify-end">
           <button onClick={() => setDarkMode(!darkMode)} className="p-1.5 rounded-lg bg-neutral-200 dark:bg-neutral-800 hover:ring-2 ring-accent transition-all duration-300 cursor-pointer flex items-center justify-center" aria-label="Toggle Dark Mode">
             {darkMode ? (
-              <img src="/light_mode.svg" alt="Mode Clair" className="w-6 h-6 object-contain"/>
+              <img src={`${import.meta.env.BASE_URL}light_mode.svg`} alt="Mode Clair" className="w-6 h-6 object-contain"/>
             ) : (
-              <img src="/dark_mode.svg" alt="Mode Sombre" className="w-6 h-6 object-contain"/>
+              <img src={`${import.meta.env.BASE_URL}dark_mode.svg`} alt="Mode Sombre" className="w-6 h-6 object-contain"/>
             )}
           </button>
         </div>

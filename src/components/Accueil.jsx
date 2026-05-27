@@ -74,7 +74,7 @@ const Accueil = () => {
             je suis <span className="font-bold">Valentin Peupion</span>, j'ai {age} ans et je suis actuellement étudiant en Bachelor à Epitech.
           </p>
           
-          <a href="/CV Valentin Peupion.pdf" 
+          <a href={`${import.meta.env.BASE_URL}CV Valentin Peupion.pdf`}
             target="_blank" 
             rel="noopener noreferrer"
             className="border-2 border-slate-900 dark:border-white px-8 py-3 rounded-full 

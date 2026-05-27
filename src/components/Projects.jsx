@@ -52,8 +52,8 @@ const Projects = () => {
       category: "Application web",
       type: "epitech",
       images: [
-        "/images/etodo/etodo_dark.png",
-        "/images/etodo/etodo_light.png",
+        `${import.meta.env.BASE_URL}images/etodo/etodo_dark.png`,
+        `${import.meta.env.BASE_URL}images/etodo/etodo_light.png`,
       ]
     },
     {
@@ -66,9 +66,9 @@ const Projects = () => {
       category: "Cybersécurité",
       type: "epitech",
       images: [
-        "/images/hackandjuice/hackandjuice.png",
-        "/images/hackandjuice/hackandjuice2.png",
-        "/images/hackandjuice/hackandjuice3.png",
+        `${import.meta.env.BASE_URL}images/hackandjuice/hackandjuice.png`,
+        `${import.meta.env.BASE_URL}images/hackandjuice/hackandjuice2.png`,
+        `${import.meta.env.BASE_URL}images/hackandjuice/hackandjuice3.png`,
       ]
     },
     {
@@ -81,10 +81,10 @@ const Projects = () => {
       category: "Product Design",
       type: "epitech",
       images: [
-        "/images/shifters/shifters.png",
-        "/images/shifters/shiftersfeed.png",
-        "/images/shifters/shiftersprofil.png",
-        "/images/shifters/shiftersanalytics.png",
+        `${import.meta.env.BASE_URL}images/shifters/shifters.png`,
+        `${import.meta.env.BASE_URL}images/shifters/shiftersfeed.png`,
+        `${import.meta.env.BASE_URL}images/shifters/shiftersprofil.png`,
+        `${import.meta.env.BASE_URL}images/shifters/shiftersanalytics.png`,
       ]
     },
     {
@@ -97,9 +97,9 @@ const Projects = () => {
       category: "Product Design",
       type: "epitech",
       images: [
-        "/images/yowl/wivalzi.png",
-        "/images/yowl/persona_Mike.png",
-        "/images/yowl/persona_Charlotte.png",
+        `${import.meta.env.BASE_URL}images/yowl/wivalzi.png`,
+        `${import.meta.env.BASE_URL}images/yowl/persona_Mike.png`,
+        `${import.meta.env.BASE_URL}images/yowl/persona_Charlotte.png`,
       ]
     },
     {

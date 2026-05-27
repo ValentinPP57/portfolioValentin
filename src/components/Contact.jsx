@@ -80,7 +80,7 @@ const Contact = () => {
               <a href="https://github.com/ValentinPP57" className="flex items-center gap-3 text-slate-600 dark:text-neutral-400 hover:text-accent dark:hover:text-accent transition-colors group">
                 <div className="w-10 h-10 rounded-full border border-slate-200 dark:border-neutral-800 flex items-center justify-center group-hover:border-accent transition-colors">
                   <img 
-                    src="/contact/git_black.svg" 
+                    src={`${import.meta.env.BASE_URL}contact/git_black.svg`}
                     alt="GitHub" 
                     className="w-5 h-5 object-contain dark:invert"
                   />
@@ -92,7 +92,7 @@ const Contact = () => {
               <a href="https://www.linkedin.com/in/valentin-peupion/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-600 dark:text-neutral-400 hover:text-accent dark:hover:text-accent transition-colors group">
                 <div className="w-10 h-10 rounded-full border border-slate-200 dark:border-neutral-800 flex items-center justify-center group-hover:border-accent transition-colors">
                   <img 
-                    src="/contact/linkedin_black.svg" 
+                    src={`${import.meta.env.BASE_URL}contact/linkedin_black.svg`} 
                     alt="GitHub" 
                     className="w-5 h-5 object-contain dark:invert"
                   />
@@ -104,7 +104,7 @@ const Contact = () => {
               <button onClick={CopierEmail} type="button" className="flex items-center gap-3 text-slate-600 dark:text-neutral-400 hover:text-accent dark:hover:text-accent transition-colors group w-full text-left focus:outline-none">
                 <div className="w-10 h-10 rounded-full border border-slate-200 dark:border-neutral-800 flex items-center justify-center group-hover:border-accent transition-colors overflow-hidden">
                   <img 
-                    src="/contact/mail_black.svg" 
+                    src={`${import.meta.env.BASE_URL}contact/mail_black.svg`}
                     alt="Email" 
                     className="w-5 h-5 object-contain dark:invert"
                   />

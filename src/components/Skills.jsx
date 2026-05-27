@@ -5,28 +5,28 @@ const SkillsListe = [
     categoryName: 'Hard Skills',
     categoryDescription: 'Mes compétences techniques',
     skills: [
-      { name: 'Python', Description: '', icon: '/skills/python.svg' },
-      { name: 'HTML', Description: '', icon: '/skills/html.svg' },
-      { name: 'CSS | Tailwind', Description: '', icon: '/skills/css.svg'},
-      { name: 'JavaScript', Description: '', icon: '/skills/javascript.svg' },
-      { name: 'SQL', Description: '', icon: '/skills/sql.svg' },
-      { name: 'React', Description: '', icon: '/skills/react.svg'},
-      { name: 'Product Design', Description: '', icon: '/skills/design.svg'},
-      { name: 'Github', Description: '', icon: '/skills/git_black.svg'},
-      { name: 'Docker', Description: '', icon: '/skills/docker.svg'},
-      { name: 'Linux | Bash', Description: '', icon: '/skills/linux.svg'},
-      { name: 'Anglais', Description: '', icon: '/skills/anglais.svg'},
+      { name: 'Python', Description: '', icon: `${import.meta.env.BASE_URL}skills/python.svg` },
+      { name: 'HTML', Description: '', icon: `${import.meta.env.BASE_URL}skills/html.svg` },
+      { name: 'CSS | Tailwind', Description: '', icon: `${import.meta.env.BASE_URL}skills/css.svg` },
+      { name: 'JavaScript', Description: '', icon: `${import.meta.env.BASE_URL}skills/javascript.svg` },
+      { name: 'SQL', Description: '', icon: `${import.meta.env.BASE_URL}skills/sql.svg` },
+      { name: 'React', Description: '', icon: `${import.meta.env.BASE_URL}skills/react.svg` },
+      { name: 'Product Design', Description: '', icon: `${import.meta.env.BASE_URL}skills/design.svg` },
+      { name: 'Github', Description: '', icon: `${import.meta.env.BASE_URL}skills/git_black.svg` },
+      { name: 'Docker', Description: '', icon: `${import.meta.env.BASE_URL}skills/docker.svg` },
+      { name: 'Linux | Bash', Description: '', icon: `${import.meta.env.BASE_URL}skills/linux.svg` },
+      { name: 'Anglais', Description: '', icon: `${import.meta.env.BASE_URL}skills/anglais.svg` },
     ],
   },
   {
     categoryName: 'Soft Skills',
     categoryDescription: 'Mes compétences humaines et relationnelles',
     skills: [
-      { name: 'Communication', Description: '', icon: '/skills/communication.svg' },
-      { name: 'Travail en Équipe', Description: '', icon: '/skills/team.svg' },
-      { name: 'Adaptabilité', Description: '', icon: '/skills/adaptabilite.svg' },
-      { name: 'Autonomie', Description: '', icon: '/skills/auto.svg' },
-      { name: 'Problem Solving', Description: '', icon: '/skills/problem.svg' },
+      { name: 'Communication', Description: '', icon: `${import.meta.env.BASE_URL}skills/communication.svg` },
+      { name: 'Travail en Équipe', Description: '', icon: `${import.meta.env.BASE_URL}skills/team.svg` },
+      { name: 'Adaptabilité', Description: '', icon: `${import.meta.env.BASE_URL}skills/adaptabilite.svg` },
+      { name: 'Autonomie', Description: '', icon: `${import.meta.env.BASE_URL}skills/auto.svg` },
+      { name: 'Problem Solving', Description: '', icon: `${import.meta.env.BASE_URL}skills/problem.svg` },
     ],
   },
 ];
@@ -56,7 +56,7 @@ const Skills = () => {
                   <div className="w-16 h-16 mb-6 p-2.5 flex items-center justify-center bg-white rounded-full border border-slate-100 dark:border-neutral-700 transition-colors group-hover:border-accent overflow-hidden shadow-inner">
                     <img 
                       src={skill.icon}
-                      alt={"Logo de ${skill.name}"} 
+                      alt={`Logo de ${skill.name}`} 
                       className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
                     />
                   </div>
