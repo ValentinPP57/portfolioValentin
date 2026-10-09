@@ -25,7 +25,7 @@ const Projects = () => {
       title: "Wading Pool Python",
       date: "Octobre 2025",
       shortDesc: "'Piscine' Python de début d'année à Epitech",
-      longDesc: "Au début de ma première année à Epitech, j'ai était plongé dans une 'Piscine' python, une Piscine dans le milieu d'Epitech c'est un bootcamp, dans lequels on réalise des tâches tout les jours. Dans Cette piscine python, j'ai donc réaliser de nombre exercices pour m'initier à python.",
+      longDesc: "Au début de ma première année à Epitech, j'ai été plongé dans une 'Piscine' Python. Une Piscine, dans le milieu d'Epitech, c'est un bootcamp dans lequel on réalise des tâches tous les jours. Dans cette piscine Python, j'ai donc réalisé de nombreux exercices pour m'initier à Python.",
       tags: ["Epitech", "Python"],
       category: "Python",
       type: "epitech",
@@ -63,7 +63,7 @@ const Projects = () => {
     {
       id: 4,
       title: "Hack & Juice",
-      date: "Decembre 2025",
+      date: "Décembre 2025",
       shortDesc: "Capture the flag sur le Juice Shop de l'OWASP",
       longDesc: "",
       tags: ["Epitech", "Cybersécurité"],
@@ -78,7 +78,7 @@ const Projects = () => {
     {
       id: 5,
       title: "Hackathon Shifters",
-      date: "janvier 2026",
+      date: "Janvier 2026",
       shortDesc: "Hackathon pour l'association des Shifters, product design d'une app web",
       longDesc: "",
       tags: ["Epitech", "Web"],
@@ -94,8 +94,8 @@ const Projects = () => {
     {
       id: 6,
       title: "YOWL",
-      date: "janvier 2026",
-      shortDesc: "Création dU MVP d'un réseau social original",
+      date: "Janvier 2026",
+      shortDesc: "Création du MVP d'un réseau social original",
       longDesc: "",
       tags: ["Epitech", "Web", "HTML"],
       category: "Product Design",
@@ -112,7 +112,7 @@ const Projects = () => {
       id: 7,
       title: "Stage à ACREOS",
       date: "",
-      shortDesc: "Stage de 1 semaine dans l'entreprise ACREOS",
+      shortDesc: "Stage d'une semaine dans l'entreprise ACREOS",
       longDesc: "",
       tags: ["Pro", "Modélisation", "Unity"],
       category: "Stage",
@@ -272,10 +272,10 @@ const Projects = () => {
                   <p className="text-accent text-sm mb-6 font-mono">{project.tags.filter(t => t).join(' | ') || "Aucun tag"}</p>
                   <div className="w-full aspect-video bg-slate-100 dark:bg-neutral-800 rounded-3xl overflow-hidden border border-slate-200 dark:border-white/5 relative mt-auto">
                     {project.images && project.images.length > 0 ? (
-                      <img src={project.images[0]} alt={project.title} className="w-full h-full object-cover" />
+                      <img src={project.images[0]} alt={project.title} className="w-full h-full object-contain object-center p-3" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-slate-400 dark:text-neutral-600 font-mono text-xs">
-                        [ Pas d'images disponible ]
+                        [ Pas d'image disponible ]
                       </div>
                     )}
                   </div>
@@ -325,9 +325,9 @@ const Projects = () => {
               </h3>
               <p className="text-accent font-mono text-sm mt-2">{ProjetSelectionne.tags.filter(t => t).join(' | ')}</p>
             </div>
-            <div className="w-full h-64 md:h-[500px] bg-slate-100 dark:bg-neutral-800 rounded-3xl overflow-hidden border border-slate-200 dark:border-white/5 relative group/carousel shadow-inner flex items-center justify-center">
+            <div className="w-full h-64 md:h-[500px] shrink-0 bg-slate-100 dark:bg-neutral-800 rounded-3xl overflow-hidden border border-slate-200 dark:border-white/5 relative group/carousel shadow-inner flex items-center justify-center">
               {ProjetSelectionne.images && ProjetSelectionne.images.length > 0 ? (<>
-                  <img src={ProjetSelectionne.images[indexImages]} alt={`Slide ${indexImages}`} className="w-full h-full object-contain transition-all duration-300" />
+                  <img src={ProjetSelectionne.images[indexImages]} alt={`Slide ${indexImages}`} className="w-full h-full object-contain object-center p-4 md:p-6 transition-all duration-300" />
                   {ProjetSelectionne.images.length > 1 && (<>
                       <button onClick={imagePrecedente} className="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-accent transition-colors cursor-pointer text-lg">❮</button>
                       <button onClick={imageSuivante} className="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-accent transition-colors cursor-pointer text-lg">❯</button>
@@ -340,7 +340,7 @@ const Projects = () => {
                   )}
                 </>
               ) : (
-                <div className="text-slate-400 dark:text-neutral-600 font-mono text-sm">Aucunes images disponible</div>
+                <div className="text-slate-400 dark:text-neutral-600 font-mono text-sm">Aucune image disponible</div>
               )}
             </div>
             <div className="text-slate-600 dark:text-neutral-300 space-y-4">
